@@ -1,0 +1,183 @@
+EESchema Schematic File Version 4
+LIBS:Thunder_tracker-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega8A-PU U1
+U 1 1 5D9B3029
+P 4050 2850
+F 0 "U1" H 4050 4431 50  0000 C CNN
+F 1 "ATmega8A-PU" H 4050 4340 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 4050 2850 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Microchip%208bit%20mcu%20AVR%20ATmega8A%20data%20sheet%2040001974A.pdf" H 4050 2850 50  0001 C CNN
+	1    4050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V0 #PWR0101
+U 1 1 5D9B39A4
+P 4550 850
+F 0 "#PWR0101" H 4550 700 50  0001 C CNN
+F 1 "+3V0" H 4565 1023 50  0000 C CNN
+F 2 "" H 4550 850 50  0001 C CNN
+F 3 "" H 4550 850 50  0001 C CNN
+	1    4550 850 
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	5450 850  5550 950 
+Entry Wire Line
+	3550 850  3650 950 
+Wire Wire Line
+	4050 1450 3650 1450
+Wire Wire Line
+	3650 1450 3650 950 
+Wire Wire Line
+	3650 1450 3450 1450
+Wire Wire Line
+	3450 1450 3450 1750
+Connection ~ 3650 1450
+$Comp
+L power:GND #PWR0102
+U 1 1 5D9B4E70
+P 4550 4850
+F 0 "#PWR0102" H 4550 4600 50  0001 C CNN
+F 1 "GND" H 4555 4677 50  0000 C CNN
+F 2 "" H 4550 4850 50  0001 C CNN
+F 3 "" H 4550 4850 50  0001 C CNN
+	1    4550 4850
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	3550 4850 3650 4750
+Wire Wire Line
+	3650 4750 3650 4250
+Wire Wire Line
+	3650 4250 4050 4250
+$Comp
+L RF_Module:RFM95W-868S2 U2
+U 1 1 5D9B5E69
+P 6800 2550
+F 0 "U2" H 6800 3231 50  0000 C CNN
+F 1 "RFM95W-868S2" H 6800 3140 50  0000 C CNN
+F 2 "" H 3500 4200 50  0001 C CNN
+F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf" H 3500 4200 50  0001 C CNN
+	1    6800 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2250 6300 2250
+Wire Wire Line
+	6300 2450 4700 2450
+Wire Wire Line
+	4700 2450 4700 2150
+Wire Wire Line
+	4700 2150 4650 2150
+Wire Wire Line
+	6300 2350 4750 2350
+Wire Wire Line
+	4750 2350 4750 2050
+Wire Wire Line
+	4750 2050 4650 2050
+Wire Wire Line
+	4650 1950 4800 1950
+Wire Wire Line
+	4800 1950 4800 2550
+Wire Wire Line
+	4800 2550 6300 2550
+Wire Wire Line
+	6800 2050 6800 1800
+Wire Wire Line
+	6800 950  5550 950 
+Wire Wire Line
+	6700 3150 6700 3300
+Entry Wire Line
+	5500 4850 5600 4750
+Wire Wire Line
+	5600 4750 6700 4750
+Wire Wire Line
+	4650 3150 5150 3150
+Wire Wire Line
+	5150 3150 5150 3200
+Wire Wire Line
+	5150 3200 7300 3200
+Wire Wire Line
+	7300 3200 7300 2950
+Wire Wire Line
+	7300 2850 7350 2850
+Wire Wire Line
+	7350 2850 7350 3250
+Wire Wire Line
+	7350 3250 4650 3250
+$Comp
+L Device:C C1
+U 1 1 5D9B5CBD
+P 3000 2050
+F 0 "C1" H 3115 2096 50  0000 L CNN
+F 1 "C" H 3115 2005 50  0000 L CNN
+F 2 "" H 3038 1900 50  0001 C CNN
+F 3 "~" H 3000 2050 50  0001 C CNN
+	1    3000 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2200 3000 4750
+Wire Wire Line
+	3000 4750 3650 4750
+Wire Wire Line
+	3000 1900 3000 950 
+Wire Wire Line
+	3000 950  3650 950 
+$Comp
+L Device:C C2
+U 1 1 5D9B6A06
+P 7600 2550
+F 0 "C2" H 7715 2596 50  0000 L CNN
+F 1 "C" H 7715 2505 50  0000 L CNN
+F 2 "" H 7638 2400 50  0001 C CNN
+F 3 "~" H 7600 2550 50  0001 C CNN
+	1    7600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2700 7600 3300
+Wire Wire Line
+	7600 3300 6700 3300
+Connection ~ 6700 3300
+Wire Wire Line
+	6700 3300 6700 4750
+Wire Wire Line
+	7600 2400 7600 1800
+Wire Wire Line
+	7600 1800 6800 1800
+Connection ~ 6800 1800
+Wire Wire Line
+	6800 1800 6800 950 
+$Comp
+L Device:Antenna AE1
+U 1 1 5D9B85E1
+P 7500 2250
+F 0 "AE1" V 7454 2380 50  0000 L CNN
+F 1 "Antenna" V 7545 2380 50  0000 L CNN
+F 2 "" H 7500 2250 50  0001 C CNN
+F 3 "~" H 7500 2250 50  0001 C CNN
+	1    7500 2250
+	0    1    1    0   
+$EndComp
+Wire Bus Line
+	3550 4850 5550 4850
+Wire Bus Line
+	3550 850  5550 850 
+$EndSCHEMATC
