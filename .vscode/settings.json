@@ -1,0 +1,8 @@
+{
+	"files.associations": {
+		"timer_conf.h": "c",
+		"spi_config.h": "c",
+		"spi_conf.h": "c",
+		"uart_conf.h": "c"
+	}
+}

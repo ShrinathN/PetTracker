@@ -124,22 +124,16 @@ Wire Wire Line
 $Comp
 L Device:C C1
 U 1 1 5D9B5CBD
-P 3000 2050
-F 0 "C1" H 3115 2096 50  0000 L CNN
-F 1 "C" H 3115 2005 50  0000 L CNN
-F 2 "" H 3038 1900 50  0001 C CNN
-F 3 "~" H 3000 2050 50  0001 C CNN
-	1    3000 2050
-	1    0    0    -1  
+P 3300 1450
+F 0 "C1" H 3415 1496 50  0000 L CNN
+F 1 "C" H 3415 1405 50  0000 L CNN
+F 2 "" H 3338 1300 50  0001 C CNN
+F 3 "~" H 3300 1450 50  0001 C CNN
+	1    3300 1450
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3000 2200 3000 4750
-Wire Wire Line
 	3000 4750 3650 4750
-Wire Wire Line
-	3000 1900 3000 950 
-Wire Wire Line
-	3000 950  3650 950 
 $Comp
 L Device:C C2
 U 1 1 5D9B6A06
@@ -176,6 +170,30 @@ F 3 "~" H 7500 2250 50  0001 C CNN
 	1    7500 2250
 	0    1    1    0   
 $EndComp
+Connection ~ 3450 1450
+Wire Wire Line
+	3150 1450 3000 1450
+Wire Wire Line
+	3000 1450 3000 4750
+$Comp
+L Device:Crystal Y1
+U 1 1 5D9B7E9E
+P 3200 2050
+F 0 "Y1" V 3050 1900 50  0000 L CNN
+F 1 "32.768KHz" V 3400 1900 50  0000 L CNN
+F 2 "" H 3200 2050 50  0001 C CNN
+F 3 "~" H 3200 2050 50  0001 C CNN
+	1    3200 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 2200 3450 2200
+Wire Wire Line
+	3450 2200 3450 2150
+Wire Wire Line
+	3200 1900 3450 1900
+Wire Wire Line
+	3450 1900 3450 1950
 Wire Bus Line
 	3550 4850 5550 4850
 Wire Bus Line
