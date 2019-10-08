@@ -5,6 +5,7 @@
  *
  * This will clock the TIM2 from the external 32.768KHz crystal, with a prescaler of 1024.
  * At every overflow, every 7.968s the MCU will leave low power mode and execute the ISR
+ * Lets assume I'll finish all SPI LoRa related tasks in 30ms
  *
 */
 void Timer2_Init()
