@@ -4,8 +4,7 @@ CFLAGS = -g -Os -mmcu=$(MMCU)a
 
 SRC = main.c \
 timer_conf.c \
-spi_conf.c \
-uart_conf.c
+spi_conf.c
 
 all: main.hex
 

@@ -10,6 +10,9 @@
 
 void main()
 {
+	cli(); //disabling interrupts until everything has been set up
+	Timer2_Init();
+	SPI_Init();
 	while(1)
 	{
 	}

@@ -3,6 +3,9 @@
 		"timer_conf.h": "c",
 		"spi_config.h": "c",
 		"spi_conf.h": "c",
-		"uart_conf.h": "c"
-	}
+		"uart_conf.h": "c",
+		"time.h": "c",
+		"spiro.h": "c"
+	},
+	"C_Cpp.default.includePath": ["/usr/avr/include/"]
 }
