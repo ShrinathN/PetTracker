@@ -14,4 +14,5 @@ void Timer2_Init()
 	while(ASSR & 0b111); //wait until TCR2UB, OCR2UB, and TCN2UB are ready
 	TCCR2 = (1 << CS22) | (1 << CS21) | (1 << CS20); //setting prescaler as 1024
 	TIMSK |= (1 << 6); //enabling overflow interrupt, TOIE2
+
 }
