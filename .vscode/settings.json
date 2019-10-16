@@ -5,7 +5,13 @@
 		"spi_conf.h": "c",
 		"uart_conf.h": "c",
 		"time.h": "c",
-		"spiro.h": "c"
+		"spiro.h": "c",
+		"interrupt.h": "c",
+		"io.h": "c",
+		"iom64m1.h": "c",
+		"iom8.h": "c",
+		"sleep.h": "c",
+		"main.h": "c"
 	},
 	"C_Cpp.default.includePath": ["/usr/avr/include/"]
 }

@@ -18,7 +18,10 @@
 
 //public function declaration
 void SPI_Init();
-__UINT8_TYPE__ SPI_GetSpiStatus();
+U8 SPI_ReadRegister(U8);
+U8 SPI_WriteRegister(U8, U8);
+void SPI_ReadBlock(U8, U8 *, U8);
+void SPI_WriteBlock(U8, U8 *, U8);
 
 
 #endif

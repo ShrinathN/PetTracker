@@ -92,10 +92,6 @@ Wire Wire Line
 Wire Wire Line
 	4750 2050 4650 2050
 Wire Wire Line
-	4650 1950 4800 1950
-Wire Wire Line
-	4800 1950 4800 2550
-Wire Wire Line
 	4800 2550 6300 2550
 Wire Wire Line
 	6800 2050 6800 1800
@@ -194,6 +190,10 @@ Wire Wire Line
 	3200 1900 3450 1900
 Wire Wire Line
 	3450 1900 3450 1950
+Wire Wire Line
+	4800 2550 4800 1850
+Wire Wire Line
+	4800 1850 4650 1850
 Wire Bus Line
 	3550 4850 5550 4850
 Wire Bus Line
