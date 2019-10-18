@@ -11,7 +11,8 @@
 		"iom64m1.h": "c",
 		"iom8.h": "c",
 		"sleep.h": "c",
-		"main.h": "c"
+		"main.h": "c",
+		"rh_rf95.h": "c"
 	},
 	"C_Cpp.default.includePath": ["/usr/avr/include/"]
 }

@@ -16,4 +16,11 @@ typedef char S8;
 #include <avr/sleep.h>
 #include <avr/interrupt.h>
 
+#define ANIMAL_ID "THNDR"
+
+
+
+
+
+
 #endif
