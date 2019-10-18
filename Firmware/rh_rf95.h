@@ -2,9 +2,15 @@
 #define RH_RF95_H
 //includes
 #include "main.h"
-#include "spi_conf.h"
 
-U8 RH95_init_string[] = {
+//enums
+typedef enum {
+	MODE_SLEEP = 0x0,
+	MODE_STDBY = 0x1,
+	MODE_TRANS = 0x3
+}RF95_Modes;
+
+U8 RF95_init_string[] = {
 	0x6,	//register address
 	217,	//0x06 -> setting frequency to 868MHz
 	0,		//0x07
@@ -29,23 +35,23 @@ U8 RH95_init_string[] = {
 	0x0,	//0x1a
 	0x0,	//0x1b
 	0x0,	//0x1c
-	0x69,	//0x1d, RegModemConfig1, setting signal bandwidth as 62.5KHz and error coding rate as 4/8, and implicit header mode
-	0xc3,	//0x1e, RegModemConfig2, setting spread factor as 12, packet mode
-	0x64,	//0x1f, RegSymbTimeoutLsb, default
-	0x0,	//0x20, setting preamble length as 8
+	0x69,	//0x1d -> RegModemConfig1, setting signal bandwidth as 62.5KHz and error coding rate as 4/8, and implicit header mode
+	0xc3,	//0x1e -> RegModemConfig2, setting spread factor as 12, packet mode
+	0x64,	//0x1f -> RegSymbTimeoutLsb, default
+	0x0,	//0x20 -> setting preamble length as 8
 	0x8,	//0x21
-	0x5,	//0x22, PAYLOAD LENGTH!!!
-	0xff,	//0x23, RegMaxPayloadLength, default
-	0x0,	//0x24, RegHopPeriod, default
-	0x0,	//0x25, RegFifoRxByteAdd, read only
-	0x4,	//0x26, setting in mobile node
-
-
-
+	0x5,	//0x22 -> PAYLOAD LENGTH!!!
+	0xff,	//0x23 -> RegMaxPayloadLength, default
+	0x0,	//0x24 -> RegHopPeriod, default
+	0x0,	//0x25 -> RegFifoRxByteAdd, read only
+	0x4		//0x26 -> setting in mobile node
 };
 
 //public functions
-
-
+void RH_RF95_Init(void);
+void RH_RF95_DIO0_config(void);
+void RH_RF95_SetMode(RF95_Modes mode);
+void RH_RF95_SetTxData(U8 * data, U8 length);
+void RH_RF95_Transmit(void);
 
 #endif

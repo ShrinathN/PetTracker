@@ -4,7 +4,8 @@ CFLAGS = -I. -g -Os -mmcu=$(MMCU)a
 
 SRC = main.c \
 timer_conf.c \
-spi_conf.c
+spi_conf.c \
+rh_rf95.c
 
 all: main.hex
 
@@ -14,4 +15,4 @@ main.hex: main
 main: $(SRC)
 
 clean:
-	rm main main.hex
+	rm main main.hex *.o

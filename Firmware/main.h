@@ -9,7 +9,7 @@ typedef unsigned char U8;
 typedef char S8;
 
 //will use the 1MHz internal oscillator for this, gotta save power
-#define F_CPU 1000000UL
+#define F_CPU 8000000UL
 #include <avr/io.h>
 #include <util/delay.h>
 #include <avr/eeprom.h>

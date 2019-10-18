@@ -8,7 +8,7 @@
  * Lets assume we'll finish all SPI LoRa related tasks in 30ms
  *
 */
-void Timer2_Init()
+void Timer2_Init(void)
 {
 	ASSR |= (1 << AS2); //setting the crystal source to TOSC1
 	while(ASSR & 0b111); //wait until TCR2UB, OCR2UB, and TCN2UB are ready

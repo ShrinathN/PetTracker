@@ -4,6 +4,6 @@
 #include "main.h"
 
 //public functions
-void Timer2_Init();
+void Timer2_Init(void);
 
 #endif
