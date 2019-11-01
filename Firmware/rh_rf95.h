@@ -10,7 +10,7 @@ typedef enum {
 	MODE_TRANS = 0x3
 }RF95_Modes;
 
-U8 RF95_init_string[] = {
+const static U8 RF95_init_string[] = {
 	0x6,	//register address
 	217,	//0x06 -> setting frequency to 868MHz
 	0,		//0x07

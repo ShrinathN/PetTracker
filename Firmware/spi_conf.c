@@ -2,7 +2,13 @@
 
 //private function declaration
 
-
+/*
+ * Transmits data through SPI bus
+ *
+ * Puts the data into the SPDR register and then waits until the SPIF bit is set
+ * @param (U8)data is the data to write
+ * @return (U8)this is the data that was in the slave devices' register
+*/
 U8 SPI_Transmit(U8 data)
 {
 	U8 to_return_value = U8_MAX;

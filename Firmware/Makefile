@@ -1,6 +1,6 @@
 CC = avr-gcc
 MMCU = atmega8
-CFLAGS = -I. -g -Os -mmcu=$(MMCU)a
+CFLAGS = -I. -Os -mmcu=$(MMCU)a
 
 SRC = main.c \
 timer_conf.c \

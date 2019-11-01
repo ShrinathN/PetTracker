@@ -6,7 +6,7 @@
 
 //typedefs
 typedef unsigned char U8;
-typedef char S8;
+typedef signed char S8;
 
 //will use the 1MHz internal oscillator for this, gotta save power
 #define F_CPU 8000000UL
@@ -15,6 +15,7 @@ typedef char S8;
 #include <avr/eeprom.h>
 #include <avr/sleep.h>
 #include <avr/interrupt.h>
+#include <string.h>
 
 #define ANIMAL_ID "THNDR"
 
