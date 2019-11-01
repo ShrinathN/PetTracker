@@ -10,5 +10,5 @@ It is only a proxyimity sensor, it will not give the exact position of the trans
 This is the circuit diagram. The 3V power supply can go up to 3V3 and it can be replaced with a battery or whatever you want.
 
 ## Runtime
-![Runtime](https://raw.githubusercontent.com/ShrinathN/PetTracker/master/images/circuit.png)
+![Runtime](https://raw.githubusercontent.com/ShrinathN/PetTracker/master/images/runtime.png)
 I have not tested this out but this is a rough estimate of how long the beacon should be able to function on different types of cells.
